@@ -1,7 +1,7 @@
 import Meta from "../components/Meta";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import pic1 from "../public/assets/man.png";
+import pic_1 from "../public/assets/man.png";
 import pic2 from "../public/assets/woman.png";
 import Image from "next/image";
 
@@ -32,7 +32,7 @@ export default function FAQ() {
                   alt="icon"
                   width="40"
                   height="40"
-                  src={pic1}
+                  src={pic_1}
                   className="rounded-full bg-white"></Image>
                     <span class="flex-grow flex flex-col pl-4">
                       <span class="title-font font-medium text-gray-900">Lee Jeno</span>
