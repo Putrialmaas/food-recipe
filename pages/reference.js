@@ -1,94 +1,139 @@
 import Header from "../components/Header";
+import Meta from "../components/Meta";
 import Footer from "../components/Footer";
+import Image from "next/image";
+import pic1 from "../public/assets/1.png";
+import pic2 from "../public/assets/2.png";
+import pic3 from "../public/assets/3.png";
+import pic4 from "../public/assets/4.png";
+import pic5 from "../public/assets/5.png";
+import pic6 from "../public/assets/6.png";
 
 export default function Reference() {
   return (
     <div>
-
+      <Meta title="Reference" />
       <Header />
-
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-4 mx-auto">
-          <div class="flex flex-wrap w-full mb-12 flex-col items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Reference</h1>
-            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+        <div class="container px-5 py-5 mx-auto">
+          <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+              Reference Food Recipe
+            </h1>
+            <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+              Some of the references used in making Food Recipes
+            </p>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            </div>
           </div>
-          <div class="flex flex-wrap -m-4">
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+            <div class="p-4 md:w-1/3 flex flex-col text-justify items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic1}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg text-center title-font font-medium mb-3">
+                  Github
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Stores source code for a project and tracks a complete history of all changes to that code. This allows users to collaborate on projects more effectively by providing tools for managing changes that may vary from developer to developer.
+                </p>
               </div>
             </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <circle cx="6" cy="6" r="3"></circle>
-                    <circle cx="6" cy="18" r="3"></circle>
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+            <div class="p-4 md:w-1/3 flex flex-col text-justify items-center">
+              <div class="bg-white bg-none w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic2}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg text-center title-font font-medium mb-3">
+                  Rapid API
+                </h2>
+                <p class="leading-relaxed text-base">
+                  The world's largest API hub, is used by over three million developers to find, test, and connect to thousands of APIs — all with a single API key and dashboard.
+                </p>
               </div>
             </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+            <div class="p-4 md:w-1/3 flex flex-col text-justify items-center">
+              <div class="bg-white w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic3}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <h2 class="bg-white text-gray-900 text-lg text-center title-font font-medium mb-3">
+                  Edamam API
+                </h2>
+                <p class="leading-relaxed text-base">
+                  API developer portal for Nutrition Analysis, Food Database Lookup, Recipe Search API and others. 
+                </p>
               </div>
             </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+            <div class="p-4 md:w-1/3 flex flex-col text-justify items-center">
+              <div class="bg-white w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic4}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg text-center title-font font-medium mb-3">
+                  Node JS
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Open-source JavaScript runtime environment that can be used across platforms. Its function is to develop network and server-side applications, which can be tailored to the needs.
+                </p>
               </div>
             </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+            <div class="p-4 md:w-1/3 flex flex-col text-justify items-center">
+              <div class="bg-white w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic5}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg text-center title-font font-medium mb-3">
+                  Flaticon
+                </h2>
+                <p class="leading-relaxed text-base">
+                  One of the free icon provider sites that has lots of stock icons.
+                </p>
               </div>
             </div>
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls</h2>
-                <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+            <div class="p-4 md:w-1/3 flex flex-col text-justify items-center">
+              <div class="bg-white w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 bg-none flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic6}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <h2 class="text-gray-900 text-lg text-center title-font font-medium mb-3">
+                  Tailblocks
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Tailblocks is a Next js app to provide best web design components for free. It uses React, NextJs, Tailwind CSS and deployed on Digital Ocean.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <Footer />
-
     </div>
   );
 }
