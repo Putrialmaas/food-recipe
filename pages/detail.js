@@ -5,6 +5,7 @@ import Link from "next/link"
 import Meta from "../components/Meta";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import BottomBar from "../components/BottomBar";
 
 export default function Home() {
     const router = useRouter();
@@ -27,7 +28,7 @@ export default function Home() {
                     <div class="lg:w-4/5 mx-auto flex flex-wrap">
                         <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
                             <h2 class="text-sm title-font text-gray-500 tracking-widest uppercase">{data ? data.cuisineType[0] : ''}</h2>
-                            <h1 class="text-gray-900 text-3xl title-font font-medium mb-8">{data ? data.label : ''}</h1>
+                            <h1 class="text-gray-900 text-3xl title-font font-semibold mb-8">{data ? data.label : ''}</h1>
                             <div class="flex border-t border-gray-200 py-2">
                                 <span class="text-gray-500">Calories</span>
                                 <span class="ml-auto text-gray-900">{data ? data.calories : ''} <span className="font-bold">J</span></span>
@@ -49,7 +50,7 @@ export default function Home() {
                                 <span class="ml-auto text-gray-900">{data ? (data.totalTime == '0' ? 15 : data.totalTime) : ''} <span className="font-bold">Minutes</span></span>
                             </div>
                             <div class="flex">
-                                <Link href={data ? data.url : ''} class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Read Detail</Link>
+                                <Link href={data ? data.url : ''} target="_blank" rel="noopener noreferrer" class="flex ml-auto text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Read Detail</Link>
                             </div>
                         </div>
                         <Image alt="cover" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" width="400" height="400" src={data ? data.image : ''} />
@@ -57,7 +58,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <Footer />
+            <Footer/>
         </div>
     );
 }

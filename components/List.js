@@ -28,7 +28,7 @@ export default function List() {
                 <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
                     {
                         data === null ?
-                            (<p class="mx-auto text-center font-bold">Loading...</p>) :
+                            (<p class="mx-auto text-center font-bold mt-4">Loading...</p>) :
                             data.map((item, index) => (<ItemCard key={index} data={item.recipe} />)
                             )
                     }
